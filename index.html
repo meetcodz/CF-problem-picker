@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="left">
+        <h1>CF Problem Picker</h1>
+        <p>Select a difficulty rating and relevant tags, generate a random problem, and start solving instantly. No distractions—just one well-chosen problem at a time.</p>
+    </div>
+    <div class="right">
+        <div class="header">
+            <h3>Generate Random CF problem</h3>
+            <p>Pick rating and tag and start solving!</p>
+        </div>
+            <label for="rating" class="rating">Rating</label>
+            <select name="" id="rating">
+                <option value="800">800</option>
+                <option value="900">900</option>
+                <option value="1000">1000</option>
+                <option value="1100">1100</option>
+                <option value="1200">1200</option>
+                <option value="1300">1300</option>
+                <option value="1400">1400</option>
+                <option value="1500">1500</option>
+                <option value="1600">1600</option>
+                <option value="1700">1700</option>
+                <option value="1800">1800</option>
+            </select>
+            <label for="tags" class="tagsx">Tags</label>
+            <div class="tags">
+    <label class="tag">
+        <input type="checkbox" value="implementation"> implementation
+    </label>
+    <label class="tag">
+        <input type="checkbox" value="greedy"> greedy
+    </label>
+    <label class="tag">
+        <input type="checkbox" value="math"> math
+    </label>
+    <label class="tag">
+        <input type="checkbox" value="dp"> dynamic programming
+    </label>
+    <label class="tag">
+        <input type="checkbox" value="strings"> strings
+    </label>
+    <label class="tag">
+        <input type="checkbox" value="binary search"> binary search
+    </label>
+    <label class="tag">
+        <input type="checkbox" value="graphs"> graphs
+    </label>
+    <label class="tag">
+        <input type="checkbox" value="data structures"> data structures
+    </label>
+    <label class="tag">
+        <input type="checkbox" value="brute force"> brute force
+    </label>
+    <label class="tag">
+        <input type="checkbox" value="sorting"> sorting
+    </label>
+</div>
+
+           <div class="button"> <button class="generate" id="genbtn">Generate Problem</button></div>
+           <div class="result" id="result">
+            <h5 id="status">Generated!</h5>
+            <h4 id="title">Title of the problem</h4>
+            <p id="ratingtext">Rating: 800</p>
+            <p id="tagstext">Tags:</p>
+            <button class="btn" id="solvebtn">
+                Codeforces->
+            </button>
+           </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
