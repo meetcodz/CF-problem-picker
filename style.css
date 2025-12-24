@@ -11,31 +11,31 @@ html {
     scrollbar-width: none;
 }
 body {
+    background-color: #0b2545;
+    color: #eef4ed;
+}
+.container{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: #0b2545;
-    color: #eef4ed;
     gap: 40px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
-
 
 .left{
     display: flex;
     flex-direction: column;
     padding: 40px;
     flex: 4;
-    margin-top: 100px;
-    transform: translateY(80px);
+    margin-top: 150px;
 }
 
-.left h1{
-    font-size: 60px;
+.left h1 {
+    font-size: 50px
 }
 
-.left p{
-    font-size: 20px;
+.left p {
+    font-size: 17px;
 }
 .right{
     flex: 2;
@@ -54,7 +54,7 @@ body {
 
 .right h3{
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -62,32 +62,33 @@ body {
 
 .right p{
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .right{
     display: block;
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 40px;
     text-align: left;
+}
+.rating label{
+    display: block;
+    margin-top: 15px;
 }
 select{
     display: block;
-    font-size: 21px;
+    font-size: 15px;
     width: 100%;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .tagsx{
     display: block;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .tags {
@@ -104,7 +105,7 @@ select{
     background-color: #0b2545;
     padding: 6px 10px;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -123,7 +124,7 @@ button{
     padding: 5px 10px;
     margin-top: 15px;
     background-color: #3b82f6;
-    font-size: 25px;
+    font-size: 15px;
     color: white;
     font-weight: 600;
     justify-content: center;
@@ -156,7 +157,7 @@ button:hover{
     margin-top: 10px;
 }
 .result p{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -166,7 +167,7 @@ button:hover{
 
 @media (max-width: 1024px) {
 
-  body {
+  .container {
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
@@ -188,7 +189,7 @@ button:hover{
   }
 
   .right {
-    width: 90%;
+    width: 70%;
     max-width: 420px;
     margin-right: 0;
     padding: 20px;
